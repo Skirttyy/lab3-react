@@ -1,0 +1,16 @@
+.navitem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-size {
+    height: 20px;
+    width: auto;
+}
+
+.text-style {
+    color: black;
+    color: black;
+}

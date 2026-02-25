@@ -1,0 +1,88 @@
+.formContainer {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  width: 320px;
+
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formContainer label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.formContainer input[type="text"],
+.formContainer select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.dateInputs {
+  display: flex;
+  gap: 10px;
+}
+
+.dateInputs input {
+  width: 60px;
+  text-align: center;
+}
+
+.buttonsRow {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btnPrimary {
+  background-color: #111;
+  color: white;
+  border-color: #111;
+}
+
+.btnPrimary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btnSecondary {
+  background-color: white;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.btnSecondary:hover {
+  background-color: #eee;
+}
+
+@media (max-width: 400px) {
+    .formContainer {
+        width: 90%; /* Ocupă aproape tot ecranul */
+        padding: 15px;
+    }
+    
+    .dateInputs {
+        flex-wrap: wrap; /* Data nu se va înghesui */
+    }
+}

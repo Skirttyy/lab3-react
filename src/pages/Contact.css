@@ -1,0 +1,18 @@
+.contactContainer {
+    padding: 100px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column; /* Stivuiește elementele vertical */
+        gap: 50px;
+        padding: 40px 20px;
+    }
+}

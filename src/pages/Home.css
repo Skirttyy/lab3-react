@@ -1,0 +1,22 @@
+.homeLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    padding: 100px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .homeLayout {
+        padding: 40px 20px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .homeLayout {
+        gap: 80px; /* Redus de la 130px */
+        padding: 60px 40px;
+    }
+}

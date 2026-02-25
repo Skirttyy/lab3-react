@@ -1,0 +1,73 @@
+.aboutContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.about-title-style {
+    margin: 0;
+    color: black;
+    width: 500px;
+    font-size: 100px;
+    font-family: "Inter";
+    line-height: 75px;
+}
+
+.about-desc-style {
+    margin: 0;
+    width: 500px;
+    color: black;
+    font-size: 15px;
+    font-family: "Inter";
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    /* About */
+    .about-title-style {
+        font-size: 50px; /* Redus de la 100px */
+        line-height: 55px;
+        width: 100%; 
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .about-desc-style {
+        width: 100%;
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    /* Description */
+    .titleStyle {
+        font-size: 60px; /* Redus de la 150px */
+        line-height: 65px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .descStyle {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .descContainer {
+        align-items: center; /* Centrează conținutul */
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-title-style {
+        font-size: 70px; /* Ajustat de la 100px */
+        width: 100%;    /* Eliminăm fixarea la 500px */
+        max-width: 600px;
+        line-height: 65px;
+    }
+}
